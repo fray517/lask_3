@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunda Padel - Падел-теннис в Москве</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        #mainCarousel {
+            max-width: 100%;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        
+        .carousel-item {
+            max-height: 300px;
+            overflow: hidden;
+        }
+        
+        .carousel-item img {
+            height: 300px !important;
+            max-height: 40vh !important;
+            object-fit: cover !important;
+            width: 100% !important;
+            max-width: 100% !important;
+            display: block;
+        }
+        
+        @media (max-width: 992px) {
+            .carousel-item {
+                max-height: 280px;
+            }
+            .carousel-item img {
+                height: 280px !important;
+                max-height: 35vh !important;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .carousel-item {
+                max-height: 250px;
+            }
+            .carousel-item img {
+                height: 250px !important;
+                max-height: 30vh !important;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .carousel-item {
+                max-height: 200px;
+            }
+            .carousel-item img {
+                height: 200px !important;
+                max-height: 25vh !important;
+            }
+        }
+        .card img {
+            height: 250px;
+            object-fit: cover;
+        }
+        footer {
+            margin-top: 50px;
+        }
+        .social-links a {
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: transform 0.3s;
+        }
+        .social-links a:hover {
+            transform: scale(1.2);
+        }
+        section {
+            scroll-margin-top: 80px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center py-3">
+                <div class="col-md-6">
+                    <h1 class="mb-0">Lunda Padel</h1>
+                    <p class="mb-0 small">Падел-теннис в Москве</p>
+                </div>
+                <div class="col-md-6">
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <div class="container-fluid px-0">
+                            <button class="navbar-toggler" type="button" 
+                                    data-bs-toggle="collapse" 
+                                    data-bs-target="#navbarNav"
+                                    aria-controls="navbarNav" 
+                                    aria-expanded="false" 
+                                    aria-label="Переключить навигацию">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav ms-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#home">
+                                            Главная
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#about">О клубе</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#services">Услуги</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#contacts">Контакты</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="container my-5">
+        
+        <!-- Секция 1: Слайдер -->
+        <section id="home" class="mb-5">
+            <h2 class="text-center mb-4">Наши корты</h2>
+            <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" 
+                            data-bs-target="#mainCarousel" 
+                            data-bs-slide-to="0" 
+                            class="active" 
+                            aria-current="true" 
+                            aria-label="Слайд 1">
+                    </button>
+                    <button type="button" 
+                            data-bs-target="#mainCarousel" 
+                            data-bs-slide-to="1" 
+                            aria-label="Слайд 2">
+                    </button>
+                    <button type="button" 
+                            data-bs-target="#mainCarousel" 
+                            data-bs-slide-to="2" 
+                            aria-label="Слайд 3">
+                    </button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://lundapadel.ru/_astro/court-2.5f96358a.webp" 
+                             class="d-block w-100" 
+                             alt="Корт для падел-тенниса"
+                             onerror="this.src='https://via.placeholder.com/1200x600/4A90E2/FFFFFF?text=Современные+корты'">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                            <h5>Современные корты</h5>
+                            <p>Профессиональное покрытие и освещение</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://avatars.mds.yandex.net/get-altay/14699088/2a00000196a9224ade275ed73ee7a46460ca/XXL_height" 
+                             class="d-block w-100" 
+                             alt="Игра в падел-теннис"
+                             onerror="this.src='https://via.placeholder.com/1200x600/50C878/FFFFFF?text=Динамичная+игра'">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                            <h5>Динамичная игра</h5>
+                            <p>Падел-теннис - спорт для всех возрастов</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg3jLCJNS8oqartYKwfAD_9xBpzvneKQYKfYfDYQBoK0VPJkwfVhBuHHQ&s" 
+                             class="d-block w-100" 
+                             alt="Тренировка"
+                             onerror="this.src='https://via.placeholder.com/1200x600/FF6B6B/FFFFFF?text=Профессиональные+тренировки'">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                            <h5>Профессиональные тренировки</h5>
+                            <p>Опытные тренеры помогут улучшить вашу игру</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" 
+                        type="button" 
+                        data-bs-target="#mainCarousel" 
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" 
+                        type="button" 
+                        data-bs-target="#mainCarousel" 
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Секция 2: Карточки -->
+        <section id="services" class="mb-5">
+            <h2 class="text-center mb-4">Наши услуги</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://lundapadel.ru/_image?href=%2F_astro%2Frules-img.6c533874.webp&f=webp" 
+                             class="card-img-top" 
+                             alt="Аренда корта"
+                             onerror="this.src='https://via.placeholder.com/400x250/4A90E2/FFFFFF?text=Аренда+кортов'">
+                        <div class="card-body">
+                            <h5 class="card-title">Аренда кортов</h5>
+                            <p class="card-text">
+                                Арендуйте современные корты для игры в падел-теннис. 
+                                Наши корты оснащены всем необходимым для комфортной игры 
+                                в любое время года.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <small class="text-muted">От 1500₽/час</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://lundapadel.ru/_image?href=%2F_astro%2Fcoaches.21d77520.webp&f=webp" 
+                             class="card-img-top" 
+                             alt="Тренировки"
+                             onerror="this.src='https://via.placeholder.com/400x250/50C878/FFFFFF?text=Тренировки'">
+                        <div class="card-body">
+                            <h5 class="card-title">Индивидуальные тренировки</h5>
+                            <p class="card-text">
+                                Профессиональные тренеры помогут вам освоить технику игры 
+                                и улучшить навыки. Индивидуальный подход к каждому игроку.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <small class="text-muted">От 2000₽/занятие</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://lundapadel.ru/_image?href=%2F_astro%2Fclasses-7.848551d4.webp&f=webp" 
+                             class="card-img-top" 
+                             alt="Турниры"
+                             onerror="this.src='https://via.placeholder.com/400x250/FF6B6B/FFFFFF?text=Турниры'">
+                        <div class="card-body">
+                            <h5 class="card-title">Турниры и соревнования</h5>
+                            <p class="card-text">
+                                Регулярные турниры для игроков всех уровней. 
+                                Участвуйте в соревнованиях и соревнуйтесь с лучшими 
+                                игроками Москвы.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <small class="text-muted">Регистрация открыта</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция 3: Аккордеон -->
+        <section id="about">
+            <h2 class="text-center mb-4">Часто задаваемые вопросы</h2>
+            <div class="accordion" id="infoAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" 
+                                type="button" 
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#collapseOne"
+                                aria-expanded="true" 
+                                aria-controls="collapseOne">
+                            Что такое падел-теннис?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" 
+                         class="accordion-collapse collapse show" 
+                         aria-labelledby="headingOne"
+                         data-bs-parent="#infoAccordion">
+                        <div class="accordion-body">
+                            <strong>Падел-теннис</strong> — это динамичная спортивная игра, 
+                            сочетающая элементы тенниса и сквоша. Игра проводится на корте 
+                            размером 10×20 метров, окруженном стеклянными и металлическими стенами. 
+                            В отличие от тенниса, в падел-теннисе можно использовать стены для отскока мяча. 
+                            Игра ведется ракетками с перфорированной поверхностью и специальным мячом, 
+                            похожим на теннисный, но с меньшим давлением.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" 
+                                type="button" 
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" 
+                                aria-expanded="false" 
+                                aria-controls="collapseTwo">
+                            Где находится Lunda Padel в Москве?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" 
+                         class="accordion-collapse collapse" 
+                         aria-labelledby="headingTwo"
+                         data-bs-parent="#infoAccordion">
+                        <div class="accordion-body">
+                            <strong>Lunda Padel</strong> имеет несколько филиалов в Москве:
+                            <ul class="mt-2">
+                                <li>Правобережная улица, 1Б</li>
+                                <li>Большая Филевская улица, 32</li>
+                            </ul>
+                            Все корты оснащены современным оборудованием и доступны для бронирования 
+                            через мобильное приложение или по телефону.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" 
+                                type="button" 
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" 
+                                aria-expanded="false" 
+                                aria-controls="collapseThree">
+                            Как записаться на тренировку или арендовать корт?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" 
+                         class="accordion-collapse collapse" 
+                         aria-labelledby="headingThree"
+                         data-bs-parent="#infoAccordion">
+                        <div class="accordion-body">
+                            Записаться на тренировку или арендовать корт можно несколькими способами:
+                            <ul class="mt-2">
+                                <li>Через мобильное приложение <strong>Lunda Padel</strong></li>
+                                <li>По телефону: <strong>+7 (495) 568-00-68</strong></li>
+                                <li>Через форму обратной связи на сайте</li>
+                                <li>Лично в клубе</li>
+                            </ul>
+                            Рекомендуем бронировать корты заранее, особенно в выходные дни.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" 
+                                type="button" 
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" 
+                                aria-expanded="false" 
+                                aria-controls="collapseFour">
+                            Нужно ли иметь свой инвентарь?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" 
+                         class="accordion-collapse collapse" 
+                         aria-labelledby="headingFour"
+                         data-bs-parent="#infoAccordion">
+                        <div class="accordion-body">
+                            Нет, не обязательно! В клубе <strong>Lunda Padel</strong> можно арендовать 
+                            ракетки и мячи. Однако если у вас есть свой инвентарь, вы можете принести его с собой. 
+                            Наши тренеры помогут подобрать подходящую ракетку, если вы планируете приобрести свою.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Футер -->
+    <footer class="bg-dark text-white py-4" id="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <h5>Контактная информация</h5>
+                    <p class="mb-1">
+                        <i class="fas fa-phone me-2"></i>
+                        <a href="tel:+74955680068" class="text-white text-decoration-none">
+                            +7 (495) 568-00-68
+                        </a>
+                    </p>
+                    <p class="mb-1">
+                        <i class="fas fa-envelope me-2"></i>
+                        <a href="mailto:info@lundapadel.ru" class="text-white text-decoration-none">
+                            info@lundapadel.ru
+                        </a>
+                    </p>
+                    <p class="mb-0">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        Москва, Правобережная ул., 1Б
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <h5>Следите за нами в социальных сетях</h5>
+                    <div class="social-links mt-3">
+                        <a href="https://www.instagram.com/lundapadel" 
+                           class="text-white" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/lundapadel" 
+                           class="text-white" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://vk.com/lundapadel" 
+                           class="text-white" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           aria-label="VKontakte">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="https://t.me/lundapadel" 
+                           class="text-white" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           aria-label="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-3 bg-light">
+            <div class="text-center">
+                <p class="mb-0 small">
+                    &copy; 2024 Lunda Padel. Все права защищены.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
